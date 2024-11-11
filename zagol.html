@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ласкаво просимо до Львова!</title>
+    <style>
+        /* Основний стиль для тіла */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-image: url('https://img.tsn.ua/cached/914/tsn-1ebf7e0831dcb00a7ce65c0ae2fc892d/thumbs/1116x628/9b/0c/5925ab8959ce38ae6a5baa21a7430c9b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Накладення для затемнення фону */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Стиль для контейнера */
+        .container {
+            max-width: 100%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            overflow-y: auto; /* Додаємо вертикальну прокрутку */
+        }
+
+        /* Основний стиль для заголовка */
+        header {
+            background-color: rgba(81, 45, 168, 0.9);
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 8px 12px rgba(0, 0, 0, 0.6), 0 12px 18px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-out;
+            transform: perspective(500px) rotateX(10deg);
+        }
+
+        /* Анімація для заголовку */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Стиль для секційного заголовка з 3D ефектом */
+        p.section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ead7fd;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            text-shadow: 
+                1px 1px 2px rgba(0, 0, 0, 0.7), 
+                0 0 25px rgba(255, 255, 255, 0.5),
+                0 0 5px rgba(0, 0, 0, 0.5);
+            animation: 3dTextEffect 2s ease-out forwards;
+        }
+
+        /* Анімація 3D для тексту */
+        @keyframes 3dTextEffect {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+                opacity: 0;
+            }
+            100% {
+                transform: rotateX(20deg) rotateY(10deg);
+                opacity: 1;
+            }
+        }
+
+        /* Стиль для навігаційних кнопок */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            background-color: #673ab7;
+            color: #fff;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: buttonFadeIn 0.5s forwards;
+        }
+
+        /* Затримка для кожної кнопки */
+        nav a:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        nav a:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        nav a:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        nav a:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        nav a:nth-child(5) {
+            animation-delay: 1s;
+        }
+        nav a:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+        nav a:nth-child(7) {
+            animation-delay: 1.4s;
+        }
+        nav a:nth-child(8) {
+            animation-delay: 1.6s;
+        }
+        nav a:nth-child(9) {
+            animation-delay: 1.8s;
+        }
+        nav a:nth-child(10) {
+            animation-delay: 2s;
+        }
+
+        @keyframes buttonFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav a:hover {
+            background-color: #4527a0;
+            transform: scale(1.05);
+        }
+
+        nav a:active {
+            transform: scale(0.95) translateY(5px);
+            transition: transform 0.2s ease-out;
+        }
+
+        /* Футер */
+        footer {
+            background-color: rgba(81, 45, 168, 0.9);
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay"></div> <!-- Накладення для затемнення фону -->
+
+<header>
+    <h1>Ласкаво просимо до Львова!</h1>
+</header>
+
+<div class="container">
+    <main>
+        <p class="section-title">Виберіть розділ для перегляду:</p>
+        <nav>
+            <a href="history.html">Історія</a>
+            <a href="food.html" class="menu-button">Заклади харчування</a>
+            <a href="museums.html" class="menu-button">Галереї мистецтв і музеї</a>
+            <a href="temples.html">Храми і собори</a>
+            <a href="monuments.html">Пам'ятники</a>
+            <a href="streets_squares.html">Історичні вулиці і площі</a>
+            <a href="underground.html">Підземні об'єкти</a>
+            <a href="universities.html">Найкрасивіші університети</a>
+            <a href="theaters.html">Театри</a>
+            <a href="workshops.html">Майстерні</a>
+        </nav>
+    </main>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Ваш сайт про Львів. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>

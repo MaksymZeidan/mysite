@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Фон та загальні стилі для тіла сторінки */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Стилі для меню */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Стилі для кнопок */
+.menu-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.menu-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Футер */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 8px;
+}
